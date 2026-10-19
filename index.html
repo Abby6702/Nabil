@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #172554;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav h2 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* Hero section */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #dbeafe;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1d4ed8;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+        }
+
+        /* General sections */
+        section {
+            padding: 60px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #172554;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        #about p {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+
+        .project-card h3 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        #contact {
+            text-align: center;
+            background-color: #dbeafe;
+        }
+
+        #contact p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>MyPortfolio</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home section -->
+    <header class="hero" id="home">
+        <h1>Welcome to My Portfolio</h1>
+
+        <p>
+            Hello! I'm Nabil Panggao Hassan, a 3rd year Bachelor of Science in Information Systems at Mindanao State University.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+    </header>
+
+    <!-- About section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a student learning web development.
+            I enjoy exploring new technologies, solving problems,
+            and improving my programming skills. This portfolio
+            showcases my skills, projects, and learning journey.
+        </p>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Project Management</div>
+            <div class="skill">Wala pa</div>
+            <div class="skill">Wala pa</div>
+            <div class="skill">Wala pa</div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Health Record Management Systems</h3>
+                <p>
+                    This systems is database driven that can efficiently store and manage patient health records in barangay health center using MySQL, Python + customTkinter (GUI Framework).
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>MSUedu_AI</h3>
+                <p>
+                    This web application is an AI-powered eductaional platform for tutoring and learning, built using HTML, CSS, JavaScript, and Python (Flask).
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather_Report</h3>
+                <p>
+                    This systems is simple automation system built with n8n automation workflow it is a perosnlaized daily weather report that provides personalized weather updates using OpenWeatherMap API and News API sending it directly the users Telegram account.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in connecting? Feel free to send me an email.
+        </p>
+
+        <a href="mailto:your-email@example.com" class="btn">
+            Email Me
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
